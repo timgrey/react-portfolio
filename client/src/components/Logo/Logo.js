@@ -42,6 +42,21 @@ const StyledLogo = styled.div`
         color: #888;
         text-decoration: none;
     }
+    @media (max-width: 1000px) {
+        width: 60vw;
+        height: 25vh;
+        left: 16%;
+        & .box-1 {
+            height: 20vh;
+        }
+        & .box-2 {
+            height: 20vh;
+        }
+        & .box-3 {
+            margin-left: 11%;
+            height: 20vh;
+        }
+    }
 `
 
 class Logo extends Component {

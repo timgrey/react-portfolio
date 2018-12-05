@@ -44,6 +44,24 @@ const PortfolioStyle = styled.div`
         }
         
     }
+    @media (max-width: 1000px) {
+        justify-content: flex-start;
+        top: 30%;
+        width: 90vw;
+        & .portfolio-item {
+            display: flex;
+            flex-direction:row;
+            height: 20vh;
+            background: rgba(0,0,0,.2);
+            font-size: 2.5vw;
+            & p {
+                padding: 2px;
+                & span {
+                font-size: 1.4em;
+                color: #000;
+                }
+            }
+    }
 `
 
 class Portfolio extends Component {
@@ -73,7 +91,7 @@ class Portfolio extends Component {
                     </a>
                     <br />
                     <div className="portfolio-item">
-                        <p><span>Description:</span><br />Allows user to upload an audio file and watch an alogrithm draw an abstract image based using animations happen using the Canvas API.</p>
+                        <p><span>Description:</span><br />Allows user to upload an audio file and watch an alogrithm draw an abstract image using Canvas API animations.</p>
                         <img src={WavArtImg} alt="" />
                     </div>
                 </div>

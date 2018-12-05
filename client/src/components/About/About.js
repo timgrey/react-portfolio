@@ -22,6 +22,20 @@ right: 5%;
             font-size: 1.1em;
     }
 }
+@media (max-width: 1000px) {
+    top: 38%;
+    width: 90vw;
+    font-size: 50px;
+    & p {
+        font-size: 4vw;
+        }
+        & a {
+            font-size: 1em;
+            &:hover {
+                font-size: 1.1em;
+        }
+    }
+}
     
 `
 
@@ -38,8 +52,8 @@ class About extends Component {
             <AboutStyle>
                 <div>
                     <p>I am a Full Stack Web Developer and 11 year Navy Veteran. </p>
-                    <p>I have always had a passion for coding, and turning into a career is a dream come true.</p>
-                    <p>The mix between art and technology has always has always been something I enjoyed in web development and also my 
+                    <p>I have always had a passion for coding, and turning it into a career is a dream come true.</p>
+                    <p>The mix between art and technology has always been something I enjoyed in web development and also my 
                         <a href="https://www.flickr.com/photos/zeniel/"> photography</a>.
                     </p>
                 </div>

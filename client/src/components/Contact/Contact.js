@@ -23,6 +23,13 @@ const ContactStyle = styled.div`
                 font-size: 1.1em;
         }
     }
+    @media (max-width: 1000px) {
+        top: 38%;
+        width: 90vw;
+        & p {
+            font-size: 4vw;
+        }
+    }
 `
 
 class Contact extends Component {

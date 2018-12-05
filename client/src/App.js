@@ -14,6 +14,7 @@ const AppWrap = styled.div`
     height: 100vh;
     overflow-x: hidden;
     position: absolute;
+   
 `
 const GlobalStyle = createGlobalStyle`
   body {

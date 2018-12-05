@@ -20,12 +20,20 @@ const Menu = styled.div`
             font-size: 1.4em;
         }
     }
+    @media (max-width: 1000px) {
+        top: 22%;
+        width: 100vw;
+        right: 0%;
+    }
 `
 
 function NavBar() {
     return (
 
         <Menu>
+            <div>
+                <Link to="/">Home</Link>
+            </div>
             <div>
                 <Link to="/portfolio">Portfolio</Link>
             </div>

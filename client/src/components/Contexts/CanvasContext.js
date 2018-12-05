@@ -34,13 +34,13 @@ export default class CanvasContext extends Component {
             'rgba(25,25,25,.4)',
         ]
 
-        const colorArray2 = [
-            'rgba(71,255,175, 1)',
-            'rgba(227,232,52, 1)',
-            'rgba(255,162,70, 1)',
-            'rgba(232,52,177, 1)',
-            'rgba(58,85,255, 1)',
-        ]
+        // const colorArray2 = [
+        //     'rgba(71,255,175, 1)',
+        //     'rgba(227,232,52, 1)',
+        //     'rgba(255,162,70, 1)',
+        //     'rgba(232,52,177, 1)',
+        //     'rgba(58,85,255, 1)',
+        // ]
 
         function Line(x, y, x2, y2, dx, dy, color) {
             this.x = x;
@@ -113,11 +113,11 @@ export default class CanvasContext extends Component {
                 let y = Math.random() * (canvas.height - radius * 2) + radius;
                 let x2 = x + (y / 3);
                 let y2 = 0;
-                let dx = (Math.random() - 0.5) * .7;
-                let dy = (Math.random() - 0.5) * .7;
-                let getColor = colorArray2[Math.floor(Math.random() * colorArray2.length)]
+                let dx = (Math.random() - 0.5) * .85;
+                let dy = (Math.random() - 0.5) * .85;
+                // let getColor = colorArray2[Math.floor(Math.random() * colorArray2.length)]
                 let getLineColor = colorArray[Math.floor(Math.random() * colorArray.length)]
-                this.circleArr.push(new Circle(x, y, dx, dy, radius, getColor))
+                this.circleArr.push(new Circle(x, y, dx, dy, radius, "#666"))
                 this.lineArr.push(new Line(x, y, x2, y2, dx, dy, getLineColor))
         }
     }
@@ -127,7 +127,7 @@ export default class CanvasContext extends Component {
     animate = () => {
         const canvas = this.canvas.current;
         this.ctx = canvas.getContext('2d');
-        const ctx = this.ctx
+        // const ctx = this.ctx
         requestAnimationFrame(this.animate);
 
         this.ctx.clearRect(0, 0, canvas.width, canvas.height)
